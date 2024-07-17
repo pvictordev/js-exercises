@@ -7,3 +7,9 @@ const difference = x - 7;
 
 console.log(`Sum is: ${sum}`); 
 console.log(`Difference is: ${difference}`); 
+
+
+// 2. Arrow Function
+const squre = (n) => n * n; 
+
+console.log(squre(2)); 
