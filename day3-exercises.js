@@ -13,3 +13,11 @@ console.log(`Difference is: ${difference}`);
 const squre = (n) => n * n; 
 
 console.log(squre(2)); 
+
+
+// 3. Template Literals
+let name = "Victor"; 
+let age = 20;
+let hobby = "coding in TipaScript"; 
+
+console.log(`Hello, my name is ${name}, I am ${age} and I love ${hobby}`); 
