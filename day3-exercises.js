@@ -21,3 +21,11 @@ let age = 20;
 let hobby = "coding in TipaScript"; 
 
 console.log(`Hello, my name is ${name}, I am ${age} and I love ${hobby}`); 
+
+
+// 4. Default Parameters 
+function greeting(name = "Victor") {
+    return name; 
+}
+
+console.log(`Hi ${greeting()}`);
