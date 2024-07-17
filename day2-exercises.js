@@ -18,5 +18,13 @@ var celsius = 35;
 
 console.log(`The converted temperture from celsius '${celsius}℃' in Fahrenheit is: ${(celsius * 9 / 5) + 32}℉`);
 
+//4. String Concatenation
+var firstName = "Victor"; 
+var lastName = "Purice"; 
+
+var fullName = firstName + " " + lastName
+
+console.log(`Hi, my name is ${fullName}, nice to meet you.`)
+
 
 
