@@ -15,7 +15,7 @@ const book = {
     title: "Atomic Habits",
     author: "James Clear",
     year: 2018,
-    isAvailable: false
+    isAvailable: true
 }
 
 function describeBook(book) {
@@ -25,3 +25,35 @@ function describeBook(book) {
 }
 
 console.log(describeBook(book));
+
+
+// 3. Array of Objects
+const books = [
+    {
+        title: "Atomic Habits",
+        author: "James Clear",
+        year: 2018,
+        isAvailable: true
+    },
+    {
+        title: "Grokking Algorithms",
+        author: "Aditya Bhargava",
+        year: 2016,
+        isAvailable: true
+    },
+    {
+        title: "How to Win Friends and Influence People",
+        author: "Dale Carnegie",
+        year: 1936,
+        isAvailable: false
+    },
+
+]
+
+function getTitle(books) {
+    for (let i = 0; i < books.length; i++) {
+        console.log(books[i].title);
+    }
+}
+
+getTitle(books); 
