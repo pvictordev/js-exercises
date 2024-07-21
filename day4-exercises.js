@@ -56,4 +56,25 @@ function getTitle(books) {
     }
 }
 
-getTitle(books); 
+getTitle(books);
+
+
+// 4. Object Methods
+const toggleIsAvailable = {
+    title: "Atomic Habits",
+    author: "James Clear",
+    year: 2018,
+    isAvailable: true,
+    toggleAvailability: function () {
+        this.isAvailable = !this.isAvailable;
+    }
+}
+
+// print initial object
+console.log(describeBook(toggleIsAvailable));
+
+// toggle availability
+toggleIsAvailable.toggleAvailability();
+
+// print changed object
+console.log(describeBook(toggleIsAvailable));
