@@ -45,3 +45,20 @@ function titleCase(str) {
 }
 
 console.log(titleCase("I'm a little tea pot"));
+
+
+//4. Basic Class Creation
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(`Hello, my name is ${this.name}.`);
+    }
+}
+
+const victor = new Person('Victor', 20);
+
+victor.greet();
