@@ -27,3 +27,21 @@ function longestWord(str) {
 }
 
 console.log(longestWord("lorem ipsum dolor sit amet."))
+
+
+// 3. Title Case Sentence
+function titleCase(str) {
+
+    const words = str.split(' ');
+
+    const capitalizedWords = words.map(word => {
+
+        // capitalize the first letter of each words and concatenate it with the rest of the word
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    });
+
+    return capitalizedWords.join(' ');
+
+}
+
+console.log(titleCase("I'm a little tea pot"));
