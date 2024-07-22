@@ -50,17 +50,17 @@ const books = [
 
 ]
 
-function getTitle(books) {
+function printTitle(books) {
     for (let i = 0; i < books.length; i++) {
         console.log(books[i].title);
     }
 }
 
-getTitle(books);
+printTitle(books);
 
 
 // 4. Object Methods
-const toggleIsAvailable = {
+const atomicHabitsBook = {
     title: "Atomic Habits",
     author: "James Clear",
     year: 2018,
@@ -71,10 +71,10 @@ const toggleIsAvailable = {
 }
 
 // print initial object
-console.log(describeBook(toggleIsAvailable));
+console.log(describeBook(atomicHabitsBook));
 
 // toggle availability
-toggleIsAvailable.toggleAvailability();
+atomicHabitsBook.toggleAvailability();
 
 // print changed object
-console.log(describeBook(toggleIsAvailable));
+console.log(describeBook(atomicHabitsBook));
